@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>統一發票對奬網</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <h1>統一發票對奬</h1>
+    <div class="item">        
+        <li><a href="invoice-list.php">統一發票列表</a></li>
+        <li><a href="invoice-number.php">開奬號碼輸入</a></li>
+        <li><a href="invoice-money.php">統一發票兌奬</a></li>
+    </div>
+    <div class="item">
+        <form action="invoice-received.php" method="POST">
+        <span>
+        發票年份：<input type="text" name="year" id="year"><br>
+        發票月份：<select name="month" id="month">
+                    <option value="1">1~2月</option>
+                    <option value="2">3~4月</option>
+                    <option value="3">5~6月</option>
+                    <option value="4">7~8月</option>
+                    <option value="5">9~10月</option>
+                    <option value="6">11~12月</option>
+                </select><br>
+        <nobr>發票號碼：<input type="text" name="english" id="english">-
+                <input type="number" name="number" id="number"></nobr><br>
+        發票金額：<input type="number" name="cost" id="cost"><br>
+                <input type="submit" value="送出">
+        
+        </span>
+        </form> 
+
+    </div>
+
+
+</body>
+</html>
